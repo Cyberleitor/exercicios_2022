@@ -11,4 +11,5 @@ Abril de 2022:
 - [Map](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Abril%20de%202022/abril22_Map.js);
 - [Map sem this](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Abril%20de%202022/abril22_MapSemThis.js);
 - [Reduce](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Abril%20de%202022/abril22_Reduce.js);
-- [Set](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Abril%20de%202022/abril22_Set.js).
+- [Set](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Abril%20de%202022/abril22_Set.js);
+- Módulos.
