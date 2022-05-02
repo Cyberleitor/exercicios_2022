@@ -14,4 +14,4 @@ Abril de 2022:
 - [Set](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Abril%20de%202022/abril22_Set.js);
 - [Módulos](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Abril%20de%202022/abril22_Modulos);
 - [Manipulação do DOM](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Abril%20de%202022/abril22_ManipulandoDOM);
-- Typescript.
+- [Typescript](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Abril%20de%202022/abril22_SistemaEstacionamento).
