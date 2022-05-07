@@ -18,4 +18,4 @@ Abril de 2022:
 
 Maio de 2022:
 
-- Algoritmos para cálculos simples.
+- [Algoritmos para cálculos simples](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022).
