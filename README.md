@@ -15,3 +15,7 @@ Abril de 2022:
 - [Módulos](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Abril%20de%202022/abril22_Modulos);
 - [Manipulação do DOM](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Abril%20de%202022/abril22_ManipulandoDOM);
 - [Typescript](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Abril%20de%202022/abril22_SistemaEstacionamento).
+
+Maio de 2022:
+
+- Algoritmos para cálculos simples.
