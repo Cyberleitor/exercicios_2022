@@ -19,4 +19,4 @@ Abril de 2022:
 Maio de 2022:
 
 - [Algoritmos para cálculos simples](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022);
-- Estruturas condicionais.
+- [Estruturas condicionais](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022/Estruturas%20condicionais).
