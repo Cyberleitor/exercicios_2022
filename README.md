@@ -20,4 +20,5 @@ Maio de 2022:
 
 - [Algoritmos para cálculos simples](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022);
 - [Estruturas condicionais](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022/Estruturas%20condicionais);
-- [Estruturas de repetição](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022/Estruturas%20de%20repeti%C3%A7%C3%A3o).
+- [Estruturas de repetição](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022/Estruturas%20de%20repeti%C3%A7%C3%A3o);
+- Matrizes.
