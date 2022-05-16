@@ -22,4 +22,5 @@ Maio de 2022:
 - [Estruturas condicionais](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022/Estruturas%20condicionais);
 - [Estruturas de repetição](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022/Estruturas%20de%20repeti%C3%A7%C3%A3o);
 - [Matrizes](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022/Matrizes);
-- [Funções](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022/Fun%C3%A7%C3%B5es).
+- [Funções](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022/Fun%C3%A7%C3%B5es);
+- Algoritmo para rolar dados de Role-Playing Game.
