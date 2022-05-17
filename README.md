@@ -24,4 +24,4 @@ Maio de 2022:
 - [Matrizes](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022/Matrizes);
 - [Funções](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio%20de%202022/Fun%C3%A7%C3%B5es);
 - [Algoritmo para rolar dados de Role-Playing Game](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio%20de%202022/Rolagem%20de%20dados%20de%20RPG/rolar_dados_RPG.py);
-- Lista de telefones.
+- [Lista de telefones](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio%20de%202022/Phone%20list/phone_list.py).
