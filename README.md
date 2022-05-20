@@ -26,4 +26,5 @@ Maio de 2022:
 - [Algoritmo para rolar dados de Role-Playing Game](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio%20de%202022/Rolagem%20de%20dados%20de%20RPG/rolar_dados_RPG.py);
 - [Lista de telefones](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio%20de%202022/Phone%20list/phone_list.py);
 - [Tratamento de erros](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio%20de%202022/Tratamento%20de%20Erros/tratamento_de_erros.py);
-- [Manipulando textos](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Manipulando_textos/manipulating_text.py).
+- [Manipulando textos](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Manipulando_textos/manipulating_text.py);
+- Expressões regulares.
