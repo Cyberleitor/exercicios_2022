@@ -29,4 +29,4 @@ Maio de 2022:
 - [Manipulando textos](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Manipulando_textos/manipulating_text.py);
 - [Expressões regulares](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Expressoes_regulares/regular_expressions.py);
 - [Orientação a objetos](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Orientacao_a_objetos/object_oriented_programming.py);
-- Abstração.
+- [Abstração](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Abstra%C3%A7%C3%A3o/object_oriented_abstract.py).
