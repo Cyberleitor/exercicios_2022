@@ -32,4 +32,5 @@ Maio de 2022:
 - [Abstração](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio_de_2022/Abstra%C3%A7%C3%A3o);
 - [Vetor ordenado](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Vetor_ordenado/ordenar_vetor.py);
 - [Verificador de palíndromo](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Verifica_palindromo/is_this_palindrome.py);
-- [Fatorial](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Fatorial/discover_factorial.py).
+- [Fatorial](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Fatorial/discover_factorial.py);
+- Operadores ternários.
