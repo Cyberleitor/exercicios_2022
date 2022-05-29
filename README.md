@@ -31,4 +31,5 @@ Maio de 2022:
 - [Orientação a objetos](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Orientacao_a_objetos/object_oriented_programming.py);
 - [Abstração](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Abstra%C3%A7%C3%A3o/object_oriented_abstract.py);
 - [Vetor ordenado](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Vetor_ordenado/ordenar_vetor.py);
-- [Verificador de palíndromo](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Verifica_palindromo/is_this_palindrome.py).
+- [Verificador de palíndromo](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Verifica_palindromo/is_this_palindrome.py);
+- Fatorial.
