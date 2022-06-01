@@ -34,4 +34,4 @@ Maio de 2022:
 - [Verificador de palíndromo](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Verifica_palindromo/is_this_palindrome.py);
 - [Fatorial](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Fatorial/discover_factorial.py);
 - [Operadores ternários](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio_de_2022/Operadores_ternarios);
-- [Bot de Discord](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Discord_bot/uncle_pave.py).
+- [Bot de Discord](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Discord_bot/main.py).
