@@ -38,4 +38,5 @@ Maio de 2022:
 
 Junho de 2022:
 
-- [Complexidade](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Complexidade/prime_or_not.py).
+- [Complexidade](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Complexidade/prime_or_not.py);
+- Sistema de cadastro (base).
