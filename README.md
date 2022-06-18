@@ -40,4 +40,4 @@ Junho de 2022:
 
 - [Complexidade](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Junho_de_2022/Complexidade/prime_or_not.py);
 - [Sistema de cadastro (base)](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Junho_de_2022/cadaster_system/cadaster_system.py);
-- Compreensão de lista.
+- [Compreensão de lista](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Junho_de_2022/Compreens%C3%A3o%20de%20lista/list_comprehension.py).
