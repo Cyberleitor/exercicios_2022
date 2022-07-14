@@ -4,7 +4,7 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 
 
 
-Abril de 2022:
+#### Abril de 2022:
 
 - [Debugging](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Abril_de_2022/abril22_Debugging.js);
 - [Filter](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Abril_de_2022/abril22_Filter.js);
@@ -16,7 +16,7 @@ Abril de 2022:
 - [Manipulação do DOM](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Abril_de_2022/abril22_ManipulandoDOM);
 - [Typescript](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Abril_de_2022/abril22_SistemaEstacionamento).
 
-Maio de 2022:
+#### Maio de 2022:
 
 - [Algoritmos para cálculos simples](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio_de_2022/Algoritmos_para_calculos_simples);
 - [Estruturas condicionais](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio_de_2022/Estruturas_condicionais);
@@ -31,13 +31,19 @@ Maio de 2022:
 - [Orientação a objeto](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Orientacao_a_objetos/object_oriented_programming.py);
 - [Abstração](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio_de_2022/Abstra%C3%A7%C3%A3o);
 - [Vetor ordenado](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Vetor_ordenado/ordenar_vetor.py);
-- [Verificador de palíndromo](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Verifica_palindromo/is_this_palindrome.py);
+- [Verificador de palíndromo](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Verifica_palindromo/is_palindrome.py);
 - [Fatorial](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Fatorial/discover_factorial.py);
 - [Operadores ternários](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Maio_de_2022/Operadores_ternarios);
 - [Bot de Discord](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Maio_de_2022/Discord_bot/main.py).
 
-Junho de 2022:
+#### Junho de 2022:
 
 - [Complexidade](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Junho_de_2022/Complexidade/prime_or_not.py);
 - [Sistema de cadastro (base)](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Junho_de_2022/cadaster_system/cadaster_system.py);
 - [Compreensão de lista](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Junho_de_2022/Compreens%C3%A3o%20de%20lista/list_comprehension.py).
+
+#### Julho de 2022:
+
+- [Validação de password](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Julho_de_2022/password_validation/password_validation.py);
+- [Renomeador de arquivos](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Julho_de_2022/rename_files/rename_files.py);
+- [Calculadora de idade (animal)](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Julho_de_2022/calculator_animal_age/calculate_animal_age.py).
