@@ -49,4 +49,5 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 - [Calculadora de idade (animal)](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Julho_de_2022/calculator_animal_age/calculate_animal_age.py);
 - [Gerador de nuvem de palavras](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Julho_de_2022/word_cloud/word_cloud.py);
 - [Diagnóstico de uso de disco e CPU](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Julho_de_2022/cpu_and_disk_usage/cpu_and_disk_diagnostic.py);
-- [Usando módulo OS](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Julho_de_2022/using_os_module).
+- [Usando módulo OS](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Julho_de_2022/using_os_module);
+- [Usando módulo CSV](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Julho_de_2022/using_csv_module).
