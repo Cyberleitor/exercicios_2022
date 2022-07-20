@@ -1,0 +1,3 @@
+John Nada,'They Live',John Carpenter
+Freddy Kruger,'Nightmare On Elm Street',Wes Craven
+Bub,'Day of the Dead',George A. Romero
