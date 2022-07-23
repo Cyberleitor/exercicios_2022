@@ -3,7 +3,7 @@
 import re
 
 def multi_vowel_words(text):
-	pattern = r'\w[aeiou]{3,}\w+'
+	pattern = r'\w+[aiueo]{3,}\w+'
 	result = re.findall(pattern, text)
 	return result
 
