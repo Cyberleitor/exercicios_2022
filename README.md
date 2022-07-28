@@ -53,3 +53,4 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 - [Usando módulo CSV](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Julho_de_2022/using_csv_module);
 - [Usando o módulo RE](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Julho_de_2022/using_re_module);
 - [Bot de Twitch](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Julho_de_2022/twitch_bot/twitch_bot.py).
+- [Usando módulo sys]()
