@@ -53,6 +53,9 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 - [Usando o módulo CSV](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Julho_de_2022/using_csv_module);
 - [Usando o módulo RE](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Julho_de_2022/using_re_module);
 - [Bot de Twitch](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Julho_de_2022/twitch_bot/twitch_bot.py);
-- [Usando o módulo SYS](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Julho_de_2022/using_sys_module);
+- [Usando o módulo SYS](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Julho_de_2022/using_sys_module).
+
+#### Agosto de 2022:
+
 - [Usando o módulo UNITTEST](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/using_unittest_module);
 - [Usando Bash e Python](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/using_bash_and_python).
