@@ -59,4 +59,4 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 
 - [Usando o módulo UNITTEST](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/using_unittest_module);
 - [Usando Bash e Python](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/using_bash_and_python);
-- [Depurando um arquivo de log]().
+- [Depurando um arquivo de log](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/debugging_a_log_file).
