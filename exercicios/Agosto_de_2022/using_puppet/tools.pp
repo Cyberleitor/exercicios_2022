@@ -1,0 +1,3 @@
+package { 'exif':
+	ensure => present,
+}
