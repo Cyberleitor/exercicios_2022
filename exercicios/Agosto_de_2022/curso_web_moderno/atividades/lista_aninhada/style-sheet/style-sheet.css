@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
+
+.my-tree {
+    margin: 0;
+    padding: 0;
+}
+
+.topic {
+    cursor: pointer;
+    user-select: none;
+}
+
+.topic:before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
