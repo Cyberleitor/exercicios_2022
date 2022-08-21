@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Slide</title>
+</head>
+<body>
+    <h1>HTML Slide</h1>
+    <div class="slide-container">
+        <div class="slide fade">
+            <img src="./78488af22361fd30-1200x675.jpg" alt="zumbi com metade do rosto em decomposição">
+        </div>
+        <div class="slide fade">
+            <img src="./a3006ec2-963a-46f5-9603-1a52d1165ff7.jpg" alt="zumbi de lado e gritando">
+        </div>
+        <div class="slide fade">
+            <img src="./Braindead-Zombie-e1559355849861.jpg" alt="zumbi com a pele derretendo">
+        </div>
+        <div class="slide fade">
+            <img src="./day-of-the-dead-10-zombies-great-personalities.png" alt="zumbi usando um headphone">
+        </div>
+        <div class="slide fade">
+            <img src="./zombie-movies-759.jpg" alt="zumbis dentro de um trem">
+        </div>
+        <div class="slide fade">
+            <img src="./zombie-pictures-10.jpg" alt="zumbis carbonizados">
+        </div>
+        <div class="slide fade">
+            <img src="./zombie.jpg" alt="zumbi sem os olhos e atrás de uma cerca">
+        </div>
+        <div class="slide fade">
+            <img src="./zombies_still_2_winterstateentertainment.jpg" alt="zumbi com o rosto parcialmente em decomposição">
+        </div>
+        <a href="#" class="prev" title="Previous">&#10094</a>
+        <a href="#" class="next" title="Next">&#10095</a>
+    </div>
+    <div class="dots-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <style>
+        @keyframes fade {
+
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        * {
+
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        body h1 {
+            text-align: center;
+        }
+
+        .slide-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1000px;
+            max-width: auto;
+            position: relative;
+        }
+
+        .slide-container .slide {
+            display: none;
+            width: 100%;
+        }
+
+        .slide-container .slide.fade {
+            animation: fade 0.5s cubic-bezier(0.55,0.085,0.68,0.53)both;
+        }
+
+        .slide-container .slide img {
+            width: 100%;
+        }
+
+        .slide-container .prev,
+        .slide-container .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: all 0.6 ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .slide-container .prev:hover,
+
+        .slide-container .next:hover {
+            background-color: rgba(0,0,0,0,8);
+            color: white;
+        }
+
+        .slide-container .prev {
+            left: 2px;
+        }
+
+        .slide-container .next {
+            right: 2px;
+        }
+
+        .dots-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .dots-container .dot {
+            cursor: pointer;
+            margin: 5px;
+            width: 20px;
+            height: 20px;
+            color: #333;
+            border-radius: 50%;
+            background-color: #dfd6ce;
+        }
+
+        .dots-container .dot.active {
+            border: 2px solid green;
+        }
+    </style>
+    <script>
+        var currentSlide = 0;
+        const slides = document.querySelectorAll(".slide")
+        const dots = document.querySelectorAll(".dot")
+        const init = (n) => {
+            slides.forEach((slide) => {
+                slide.style.display = "none"
+                dots.forEach((dot) => {
+                    dot.classList.remove("active")
+                })
+            })
+            slides[n].style.display = "block"
+            dots[n].classList.add("active")
+        }
+
+        document.addEventListener("DOMContentLoaded", init(currentSlide))
+
+        const next = () => {
+            currentSlide >= slides.length-1?currentSlide=0:currentSlide++
+            init(currentSlide)
+        }
+
+        const prev = () => {
+            currentSlide <= 0?currentSlide=slides.length-1:currentSlide--
+            init(currentSlide)
+        }
+
+        document.querySelector(".next").addEventListener("click",next)
+        document.querySelector(".prev").addEventListener("click",prev)
+    </script>
+</body>
+</html>

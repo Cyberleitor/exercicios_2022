@@ -5,4 +5,5 @@ Em meados do mês de agosto, por recomendação de um amigo, iniciei um curso qu
 - [Listas aninhadas](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/curso_web_moderno/atividades/lista_aninhada);
 - [Tabela](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Agosto_de_2022/curso_web_moderno/atividades/table/table.html);
 - [Formulário](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Agosto_de_2022/curso_web_moderno/atividades/formulario/index.html);
-- [HTML com imagens](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Agosto_de_2022/curso_web_moderno/atividades/html_with_images/index.html).
+- [HTML com imagens](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Agosto_de_2022/curso_web_moderno/atividades/html_with_images/index.html);
+- [HTML com slide]().
