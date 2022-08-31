@@ -62,4 +62,5 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 - [Depurando um arquivo de log](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/debugging_a_log_file);
 - [Lidando com problemas de depuração](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/troubleshooting_and_debugging);
 - [Automação de configuração de sistemas com Puppet](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/using_puppet);
-- [Curso Web Moderno](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/curso_web_moderno).
+- [Curso Web Moderno](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/curso_web_moderno);
+- [Exercícios do Code Wars]()
