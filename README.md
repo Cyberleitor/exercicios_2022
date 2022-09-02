@@ -67,4 +67,5 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 
 #### Setembro de 2022:
 
-- [Exercícios do Code Wars](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/setembro_de_2022/code_wars).
+- [Exercícios do Code Wars](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/setembro_de_2022/code_wars);
+- [Curso Web Moderno](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/curso_web_moderno).
