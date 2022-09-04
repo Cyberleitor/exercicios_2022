@@ -10,4 +10,5 @@ Em meados do mês de agosto, por recomendação de um amigo, iniciei um curso qu
 - [HTML com vídeo](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/Agosto_de_2022/curso_web_moderno/atividades/html_video/index.html);
 - [Exercícios de JavaScript](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/curso_web_moderno/atividades/javascript);
 - [Exercícios de JQuery](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/setembro_de_2022/curso_web_moderno/jquery);
-- [Exercícios de MySQL](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/setembro_de_2022/curso_web_moderno/mysql).
+- [Exercícios de MySQL](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/setembro_de_2022/curso_web_moderno/mysql);
+- [Exercícios de MongoDB]().
