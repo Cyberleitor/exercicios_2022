@@ -7,4 +7,4 @@ Em setembro de 2022, com o objetivo de avançar rumo ao meu objetivo de trabalha
 - [SMTP — Sondagem](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/smtp_test.py);
 - [Scan de Portas — Sondagem](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/scan_portas.py);
 - [Banner SSH — Captura](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/coletar_banner_ssh.py);
-- [NMAP — Varredura de portas](). 
+- [NMAP — Varredura de portas](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/scan_nmap.py). 
