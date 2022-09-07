@@ -9,5 +9,5 @@ Em setembro de 2022, com o objetivo de avançar rumo ao meu objetivo de trabalha
 - [Banner SSH — Captura](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/coletar_banner_ssh.py);
 - [NMAP — Varredura de portas](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/scan_nmap.py);
 - [Trojan — Base conceitual](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/beginer_trojan.py);
-- [Coleta de cookies]();
-- [Sniffer — Monitorar tráfego de pacotes]().
+- [Coleta de cookies](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/capturar_cookies.py);
+- [Sniffer — Monitorar tráfego de pacotes](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/sniffer_pacotes.py).
