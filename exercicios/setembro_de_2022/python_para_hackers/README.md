@@ -11,4 +11,4 @@ Em setembro de 2022, com o objetivo de avançar rumo ao meu objetivo de trabalha
 - [Trojan — Base conceitual](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/beginer_trojan.py);
 - [Coleta de cookies](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/capturar_cookies.py);
 - [Sniffer — Monitorar tráfego de pacotes](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/sniffer_pacotes.py);
-- Backdoor — [Servidor]()/[Alvo]().
+- Backdoor — [Servidor](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/backdoor_servidor.py)/[Alvo](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/backdoor_vitima.py).
