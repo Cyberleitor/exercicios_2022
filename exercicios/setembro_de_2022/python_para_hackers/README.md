@@ -14,4 +14,5 @@ Em setembro de 2022, com o objetivo de avançar rumo ao meu objetivo de trabalha
 - Backdoor — [Servidor](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/backdoor_servidor.py)/[Alvo](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/backdoor_vitima.py);
 - [Payload — Infectar executável](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/payload_usb.py);
 - [DOS — Negação de serviço com flood](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/dos_basico_com_flood.py);
-- [Coleta de e-mails em códigos-fonte de sites](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/coletar_emails_site.py).
+- [Coleta de e-mails em códigos-fonte de sites](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/coletar_emails_site.py);
+- Métodos HTTP — Sondagem: [socket]();[requests]().
