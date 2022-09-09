@@ -17,4 +17,4 @@ Em setembro de 2022, com o objetivo de avançar rumo ao meu objetivo de trabalha
 - [Coleta de e-mails em códigos-fonte de sites](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/coletar_emails_site.py);
 - Métodos HTTP — Sondagem: [socket](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/coleta_banner_http_socket.py); [requests](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/coleta_banner_http_requests.py);
 - Gauntlet — Ferramenta desenvolvida por Afonso da Silva ([Esconder](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/hidden_archives.py)/[Recuperar](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/comeback_archives.py));
-- [Ecossistema1533 — Ataque DOS]().
+- [Ecossistema1533 — Ataque DOS](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/setembro_de_2022/python_para_hackers/exercicios/ecossistema1533_ataque_dos.py).
