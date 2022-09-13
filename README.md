@@ -70,4 +70,4 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 - [Desafios — Code Wars](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/setembro_de_2022/code_wars);
 - [Curso Web Moderno](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/Agosto_de_2022/curso_web_moderno);
 - [Python para hackers](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/setembro_de_2022/python_para_hackers);
-- [Estudos de Hacking — Leituras de livros]().
+- [Estudos de Hacking — Leituras de livros](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/setembro_de_2022/hacking_studies).
