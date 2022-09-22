@@ -1,6 +1,6 @@
 #!/usr/bin/psql
 
-# In this script I delete one table and recreate her without constraints. I made this for the goal to configure constraints after the creation.
+# In this script I delete one table and recreate her without constraints. I made this with the goal to configure constraints after the creation.
 
 drop table comissoes
 create table comissoes (
