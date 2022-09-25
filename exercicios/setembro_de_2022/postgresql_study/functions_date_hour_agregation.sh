@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# Another script writed while I read PostgreSQL: banco de dados para aplicações web modernas, by Vinicius Carvalho.
+# Another script written while I read PostgreSQL: banco de dados para aplicações web modernas, by Vinicius Carvalho.
 
 show datestyle;
 alter database postgres set datestyle to iso, dmy; # making the change without login in database
