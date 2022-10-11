@@ -85,4 +85,4 @@ async def on_message(message):
         await message.channel.send(random.choice(philosophical_uncle))
 
 
-client.run('OTgxMTU3Mzg0OTcyMDQyMjgw.Gx2RWo._H4-l8wobQxkV7hd0-iBu09kIrwS8twTRjzEOs')
+client.run('BOT ID')
