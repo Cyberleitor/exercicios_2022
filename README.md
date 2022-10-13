@@ -73,3 +73,8 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 - [Estudos de Hacking — Leituras de livros](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/setembro_de_2022/hacking_studies);
 - [Estudos de PostgreSQL — Leituras de livros](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/setembro_de_2022/postgresql_study);
 - [Downloader YouTube](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/setembro_de_2022/downloader_youtube).
+
+### Outubro de 2022:
+
+- [Estudos de Hacking — Leituras de livros]().
+
