@@ -76,5 +76,6 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 
 ### Outubro de 2022:
 
-- [Estudos de Hacking — Leituras de livros](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/outubro_de_2022).
+- [Estudos de Hacking — Leituras de livros](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/outubro_de_2022);
+- [Python e Orientação a Objetos]()
 
