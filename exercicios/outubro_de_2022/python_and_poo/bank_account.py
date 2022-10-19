@@ -11,11 +11,18 @@ class Cliente:
 
 class Conta:
 
+	_total_contas = 0
+
 	def __init__(self, numero, cliente, saldo):
 		self.numero = numero
 		self.cliente = cliente
 		self.saldo = saldo
+		Conta._total_contas += 1
 		self.historico = Historico()
+
+	@staticmethod
+	def get_total_contas():
+		return Conta._total_contas
 
 	def depositar(self, valor):
 		self.saldo += valor
@@ -63,4 +70,9 @@ conta_um.transferir(conta_dois, 200.0)
 conta_um.extrato()
 conta_um.historico.imprimir()
 conta_dois.historico.imprimir()
+criar_cliente_um = Cliente('John', 'Nada', '333333333-33')
+criar_cliente_dois = Cliente('Jane', 'Doe', '444444444-44')
+criar_conta_um = Conta('123-6', criar_cliente_um, 1000.0)
+criar_conta_dois = Conta('123-7', criar_cliente_dois, 1000.0)
+print(f"Total de contas: {Conta.get_total_contas()}")
 
