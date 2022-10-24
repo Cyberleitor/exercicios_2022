@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import datetime
+import abc
 
 class Cliente:
 
@@ -9,23 +10,27 @@ class Cliente:
 		self._cpf = cpf
 		self._senha = senha
 
-class Conta:
+class Conta(abc.ABC):
 
 	_total_contas = 0
 
 	def __init__(self, numero, cliente, saldo):
-		self.numero = numero
-		self.cliente = cliente
-		self.saldo = saldo
+		self._numero = numero
+		self._cliente = cliente
+		self._saldo = saldo
 		Conta._total_contas += 1
 		self.historico = Historico()
+
+	@abc.abstractmethod
+	def definir_tipo_taxa():
+		pass
 
 	@staticmethod
 	def get_total_contas():
 		return Conta._total_contas
 
 	def depositar(self, valor):
-		self.saldo += valor
+		self._saldo += valor
 		self.historico.transacoes.append("Depósito de {}".format(valor))
 
 	def sacar(self, valor):
@@ -48,6 +53,24 @@ class Conta:
 			self.historico.transacoes.append("Transferência de {} para a conta {}".format(valor, destino.numero))
 			return True
 
+class ContaCorrente(Conta):
+
+	def definir_tipo_taxa(self, taxa):
+		self._saldo += self._saldo * taxa * 2
+
+	def depositar(self, valor):
+		self._saldo += valor - 0.10
+
+class ContaPoupanca(Conta):
+
+	def definir_tipo_taxa(self, taxa):
+		self._saldo += self._saldo * taxa * 3
+
+class ContaInvestimento(Conta):
+
+	def definir_tipo_taxa(self, taxa):
+		self._saldo += self._saldo * taxa * 5
+
 class Historico:
 
 	def __init__(self):
@@ -60,15 +83,16 @@ class Historico:
 		for transacao in self.transacoes:
 			print("-", transacao)
 
-class Funcionario:
+class Funcionario(abc.ABC):
 
 	def __init__(self, nome, cpf, salario):
 		self._nome = nome
 		self._cpf = cpf
 		self._salario = salario
 
+	@abc.abstractmethod
 	def get_bonificacao(self):
-		return self._salario * 0.10
+		pass
 
 class Gerente(Funcionario):
 
@@ -87,6 +111,14 @@ class Gerente(Funcionario):
 
 	def get_bonificacao(self):
 		return self._salario * 0.15
+
+class Diretor(Funcionario):
+
+	def __init__(self, nome, cpf, salario):
+		super().__init__(nome, cpf, salario)
+
+	def get_bonificacao(self):
+		return self._salario * 0.20
 
 class ControleDeBonificacoes:
 
@@ -124,20 +156,47 @@ class ControleDeBonificacoes:
 # gerente = Gerente('José', '222222222-22', 5000.0, '1234', 0)
 # print(gerente.get_bonificacao())
 # print("*" * 50)
+# if __name__ == '__main__':
+	# funcionario = Funcionario("João", "111111111-11", 2000.0)
+	# print(f"Bonificação do funcionário: {funcionario.get_bonificacao()}")
+
+	# gerente = Gerente("José", "222222222-22", 5000.0, "1234", 0)
+	# print(f"Bonificação do gerente: {gerente.get_bonificacao()}")
+
+	# controle = ControleDeBonificacoes()
+	# controle.registrar(funcionario)
+	# controle.registrar(gerente)
+
+	# print(f"Total: {controle.total_bonificacoes}")
+
+	# cliente = Cliente("Maria", "333333333-33", "1234")
+	# controle = ControleDeBonificacoes()
+	# controle.registrar(cliente)
+
+# if __name__ == '__main__':
+	# conta = Conta("123-4", "João", 1000.0)
+	# conta_corrente = ContaCorrente("123-5", "José", 1000.0)
+	# conta_poupanca = ContaPoupanca("123-6", "Maria", 1000.0)
+
+	# conta.definir_tipo_taxa(0.01)
+	# conta_corrente.definir_tipo_taxa(0.01)
+	# conta_poupanca.definir_tipo_taxa(0.01)
+
+	# print(conta._saldo)
+	# print(conta_corrente._saldo)
+	# print(conta_poupanca._saldo)
+
+# if __name__ == '__main__':
+	# gerente = Gerente("José", "222222222-22", 5000.0, "1234", 0)
+	# print(gerente.get_bonificacao())
+	# diretor = Diretor("João", "111111111-11", 4000.0)
+	# print(diretor.get_bonificacao())
+
 if __name__ == '__main__':
-	funcionario = Funcionario("João", "111111111-11", 2000.0)
-	print(f"Bonificação do funcionário: {funcionario.get_bonificacao()}")
-
-	gerente = Gerente("José", "222222222-22", 5000.0, "1234", 0)
-	print(f"Bonificação do gerente: {gerente.get_bonificacao()}")
-
-	controle = ControleDeBonificacoes()
-	controle.registrar(funcionario)
-	controle.registrar(gerente)
-
-	print(f"Total: {controle.total_bonificacoes}")
-
-	cliente = Cliente("Maria", "333333333-33", "1234")
-	controle = ControleDeBonificacoes()
-	controle.registrar(cliente)
+	# conta = Conta()
+	conta_investimento = ContaInvestimento("123-6", "Maria", 1000.0)
+	conta_investimento.depositar(1000.0)
+	conta_investimento.definir_tipo_taxa(0.01)
+	print(conta_investimento.__class__.__name__)
+	print(conta_investimento._saldo)
 
