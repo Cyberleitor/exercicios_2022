@@ -4,10 +4,10 @@ import datetime
 
 class Cliente:
 
-	def __init__(self, nome, sobrenome, cpf):
-		self.nome = nome
-		self.sobrenome = sobrenome
-		self.cpf = cpf
+	def __init__(self, nome, cpf, senha):
+		self._nome = nome
+		self._cpf = cpf
+		self._senha = senha
 
 class Conta:
 
@@ -60,19 +60,84 @@ class Historico:
 		for transacao in self.transacoes:
 			print("-", transacao)
 
-cliente_um = Cliente('João', 'Oliveira', '11111111111-11')
-cliente_dois = Cliente('José', 'Azevedo', '222222222-22')
-conta_um = Conta('123-4', cliente_um, 1000.0)
-conta_dois = Conta('123-5', cliente_dois, 1000.0)
-conta_um.depositar(100.0)
-conta_um.sacar(50.0)
-conta_um.transferir(conta_dois, 200.0)
-conta_um.extrato()
-conta_um.historico.imprimir()
-conta_dois.historico.imprimir()
-criar_cliente_um = Cliente('John', 'Nada', '333333333-33')
-criar_cliente_dois = Cliente('Jane', 'Doe', '444444444-44')
-criar_conta_um = Conta('123-6', criar_cliente_um, 1000.0)
-criar_conta_dois = Conta('123-7', criar_cliente_dois, 1000.0)
-print(f"Total de contas: {Conta.get_total_contas()}")
+class Funcionario:
+
+	def __init__(self, nome, cpf, salario):
+		self._nome = nome
+		self._cpf = cpf
+		self._salario = salario
+
+	def get_bonificacao(self):
+		return self._salario * 0.10
+
+class Gerente(Funcionario):
+
+	def __init__(self, nome, cpf, salario, senha, qtd_gerenciaveis):
+		super().__init__(nome, cpf, salario)
+		self._senha = senha
+		self._qtd_gerenciaveis = qtd_gerenciaveis
+
+	def autenticacao(self, senha):
+		if self.senha == senha:
+			print("Acesso permitido.")
+			return True
+		else:
+			print("Acesso negado.")
+			return True
+
+	def get_bonificacao(self):
+		return self._salario * 0.15
+
+class ControleDeBonificacoes:
+
+	def __init__(self, total_bonificacoes=0):
+		self._total_bonificacoes = total_bonificacoes
+
+	def registrar(self, obj):
+		if hasattr(obj, "get_bonificacao"):
+			self._total_bonificacoes += obj.get_bonificacao()
+		else:
+			print(f"A instância de {obj.__class__.__name__} não implementa o método get_bonificacao().")
+
+	@property
+	def total_bonificacoes(self):
+		return self._total_bonificacoes
+
+# some tests of the written code above:
+
+# cliente_um = Cliente('João', 'Oliveira', '11111111111-11')
+# cliente_dois = Cliente('José', 'Azevedo', '222222222-22')
+# conta_um = Conta('123-4', cliente_um, 1000.0)
+# conta_dois = Conta('123-5', cliente_dois, 1000.0)
+# conta_um.depositar(100.0)
+# conta_um.sacar(50.0)
+# conta_um.transferir(conta_dois, 200.0)
+# conta_um.extrato()
+# conta_um.historico.imprimir()
+# conta_dois.historico.imprimir()
+# criar_cliente_um = Cliente('John', 'Nada', '333333333-33')
+# criar_cliente_dois = Cliente('Jane', 'Doe', '444444444-44')
+# criar_conta_um = Conta('123-6', criar_cliente_um, 1000.0)
+# criar_conta_dois = Conta('123-7', criar_cliente_dois, 1000.0)
+# print(f"Total de contas: {Conta.get_total_contas()}")
+# print("*" * 50)
+# gerente = Gerente('José', '222222222-22', 5000.0, '1234', 0)
+# print(gerente.get_bonificacao())
+# print("*" * 50)
+if __name__ == '__main__':
+	funcionario = Funcionario("João", "111111111-11", 2000.0)
+	print(f"Bonificação do funcionário: {funcionario.get_bonificacao()}")
+
+	gerente = Gerente("José", "222222222-22", 5000.0, "1234", 0)
+	print(f"Bonificação do gerente: {gerente.get_bonificacao()}")
+
+	controle = ControleDeBonificacoes()
+	controle.registrar(funcionario)
+	controle.registrar(gerente)
+
+	print(f"Total: {controle.total_bonificacoes}")
+
+	cliente = Cliente("Maria", "333333333-33", "1234")
+	controle = ControleDeBonificacoes()
+	controle.registrar(cliente)
 
