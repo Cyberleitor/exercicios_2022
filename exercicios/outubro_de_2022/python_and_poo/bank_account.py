@@ -3,7 +3,40 @@
 import datetime
 import abc
 
-class Cliente:
+class AutenticacaoMixIn:
+
+	def autenticacao(self, senha):
+		pass
+
+class SistemaInterno:
+
+	def login(self, obj):
+		if hasattr(obj, "autenticacao"):
+			obj.autenticacao()
+			return True
+		else:
+			print(f"A instância {obj.__class__.__name__} não é autenticável.")
+			return False
+
+class AtendimentoMixIn:
+
+	def cadastrar_atendimento(self):
+		pass
+
+	def atender_cliente(self):
+		pass
+
+class HoraExtraMixIn:
+
+	def calcular_hora_extra(self, horas):
+		pass
+
+class TributavelMixIn:
+
+	def get_valor_imposto(self):
+		pass
+
+class Cliente(AutenticacaoMixIn):
 
 	def __init__(self, nome, cpf, senha):
 		self._nome = nome
@@ -53,13 +86,16 @@ class Conta(abc.ABC):
 			self.historico.transacoes.append("Transferência de {} para a conta {}".format(valor, destino.numero))
 			return True
 
-class ContaCorrente(Conta):
+class ContaCorrente(Conta, TributavelMixIn):
 
 	def definir_tipo_taxa(self, taxa):
 		self._saldo += self._saldo * taxa * 2
 
 	def depositar(self, valor):
 		self._saldo += valor - 0.10
+
+	def get_valor_imposto(self):
+		return self._saldo * 0.01
 
 class ContaPoupanca(Conta):
 
@@ -70,6 +106,24 @@ class ContaInvestimento(Conta):
 
 	def definir_tipo_taxa(self, taxa):
 		self._saldo += self._saldo * taxa * 5
+
+class SeguroDeVida(TributavelMixIn):
+
+	def __init__(self, valor, titular, numero_apolice):
+		self._valor = valor
+		self._titular = titular
+		self._numero_apolice = numero_apolice
+
+	def get_valor_imposto(self):
+		return 42 + self._valor * 0.05
+
+class ManipuladorDeTributaveis:
+
+	def calcular_impostos(self, lista_tributaveis):
+		total = 0
+		for tributo in lista_tributaveis:
+			total += tributo.get_valor_imposto()
+		return total
 
 class Historico:
 
@@ -94,7 +148,7 @@ class Funcionario(abc.ABC):
 	def get_bonificacao(self):
 		pass
 
-class Gerente(Funcionario):
+class Gerente(Funcionario, AutenticacaoMixIn, HoraExtraMixIn):
 
 	def __init__(self, nome, cpf, salario, senha, qtd_gerenciaveis):
 		super().__init__(nome, cpf, salario)
@@ -112,13 +166,16 @@ class Gerente(Funcionario):
 	def get_bonificacao(self):
 		return self._salario * 0.15
 
-class Diretor(Funcionario):
+class Diretor(Funcionario, AutenticacaoMixIn):
 
 	def __init__(self, nome, cpf, salario):
 		super().__init__(nome, cpf, salario)
 
 	def get_bonificacao(self):
 		return self._salario * 0.20
+
+class Escriturario(Funcionario, AtendimentoMixIn):
+	pass
 
 class ControleDeBonificacoes:
 
@@ -192,11 +249,40 @@ class ControleDeBonificacoes:
 	# diretor = Diretor("João", "111111111-11", 4000.0)
 	# print(diretor.get_bonificacao())
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 	# conta = Conta()
-	conta_investimento = ContaInvestimento("123-6", "Maria", 1000.0)
-	conta_investimento.depositar(1000.0)
-	conta_investimento.definir_tipo_taxa(0.01)
-	print(conta_investimento.__class__.__name__)
-	print(conta_investimento._saldo)
+	# conta_investimento = ContaInvestimento("123-6", "Maria", 1000.0)
+	# conta_investimento.depositar(1000.0)
+	# conta_investimento.definir_tipo_taxa(0.01)
+	# print(conta_investimento.__class__.__name__)
+	# print(conta_investimento._saldo)
+
+# if __name__ == '__main__':
+	# diretor = Diretor("João", "111111111-11", 3000.0)
+	# gerente = Gerente("José", "222222222-22", 5000.0, "1235", 0)
+	# cliente = Cliente("Maria", "333333333-33", "1236")
+
+	# sistema = SistemaInterno()
+	# sistema.login(diretor)
+	# sistema.login(gerente)
+	# sistema.login(cliente)
+
+if __name__ == '__main__':
+
+	conta_corrente_um = ContaCorrente("123-4", "João", 1000.0)
+	conta_corrente_dois = ContaCorrente("123-4", "José", 1000.0)
+	seguro_um = SeguroDeVida(100.0, "José", "345-77")
+	seguro_dois = SeguroDeVida(200.0, "Maria", "237-98")
+
+	lista_tributaveis = []
+	lista_tributaveis.append(conta_corrente_um)
+	lista_tributaveis.append(conta_corrente_dois)
+	lista_tributaveis.append(seguro_um)
+	lista_tributaveis.append(seguro_dois)
+
+	manipulador = ManipuladorDeTributaveis()
+	total = manipulador.calcular_impostos(lista_tributaveis)
+
+	print(total)
+
 
