@@ -37,7 +37,7 @@ class TributavelMixIn:
 	def get_valor_imposto(self):
 		pass
 
-class Cliente(Autenticacao):
+class Cliente():
 
 	def __init__(self, nome, cpf, senha):
 		self._nome = nome
@@ -149,7 +149,7 @@ class Funcionario(abc.ABC):
 	def get_bonificacao(self):
 		pass
 
-class Gerente(Funcionario, Autenticacao, HoraExtraMixIn):
+class Gerente(Funcionario, HoraExtraMixIn):
 
 	def __init__(self, nome, cpf, salario, senha, qtd_gerenciaveis):
 		super().__init__(nome, cpf, salario)
@@ -167,7 +167,7 @@ class Gerente(Funcionario, Autenticacao, HoraExtraMixIn):
 	def get_bonificacao(self):
 		return self._salario * 0.15
 
-class Diretor(Funcionario, Autenticacao):
+class Diretor(Funcionario):
 
 	def __init__(self, nome, cpf, salario):
 		super().__init__(nome, cpf, salario)
