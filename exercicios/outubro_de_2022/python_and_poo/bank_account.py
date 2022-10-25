@@ -3,8 +3,9 @@
 import datetime
 import abc
 
-class AutenticacaoMixIn:
+class Autenticacao(abc.ABC):
 
+	@abc.abstractmethod
 	def autenticacao(self, senha):
 		pass
 
@@ -36,7 +37,7 @@ class TributavelMixIn:
 	def get_valor_imposto(self):
 		pass
 
-class Cliente(AutenticacaoMixIn):
+class Cliente(Autenticacao):
 
 	def __init__(self, nome, cpf, senha):
 		self._nome = nome
@@ -148,7 +149,7 @@ class Funcionario(abc.ABC):
 	def get_bonificacao(self):
 		pass
 
-class Gerente(Funcionario, AutenticacaoMixIn, HoraExtraMixIn):
+class Gerente(Funcionario, Autenticacao, HoraExtraMixIn):
 
 	def __init__(self, nome, cpf, salario, senha, qtd_gerenciaveis):
 		super().__init__(nome, cpf, salario)
@@ -166,7 +167,7 @@ class Gerente(Funcionario, AutenticacaoMixIn, HoraExtraMixIn):
 	def get_bonificacao(self):
 		return self._salario * 0.15
 
-class Diretor(Funcionario, AutenticacaoMixIn):
+class Diretor(Funcionario, Autenticacao):
 
 	def __init__(self, nome, cpf, salario):
 		super().__init__(nome, cpf, salario)
@@ -267,22 +268,30 @@ class ControleDeBonificacoes:
 	# sistema.login(gerente)
 	# sistema.login(cliente)
 
+# if __name__ == '__main__':
+
+	# conta_corrente_um = ContaCorrente("123-4", "João", 1000.0)
+	# conta_corrente_dois = ContaCorrente("123-4", "José", 1000.0)
+	# seguro_um = SeguroDeVida(100.0, "José", "345-77")
+	# seguro_dois = SeguroDeVida(200.0, "Maria", "237-98")
+
+	# lista_tributaveis = []
+	# lista_tributaveis.append(conta_corrente_um)
+	# lista_tributaveis.append(conta_corrente_dois)
+	# lista_tributaveis.append(seguro_um)
+	# lista_tributaveis.append(seguro_dois)
+
+	# manipulador = ManipuladorDeTributaveis()
+	# total = manipulador.calcular_impostos(lista_tributaveis)
+
+	# print(total)
+
 if __name__ == '__main__':
 
-	conta_corrente_um = ContaCorrente("123-4", "João", 1000.0)
-	conta_corrente_dois = ContaCorrente("123-4", "José", 1000.0)
-	seguro_um = SeguroDeVida(100.0, "José", "345-77")
-	seguro_dois = SeguroDeVida(200.0, "Maria", "237-98")
+	Autenticacao.register(Gerente)
 
-	lista_tributaveis = []
-	lista_tributaveis.append(conta_corrente_um)
-	lista_tributaveis.append(conta_corrente_dois)
-	lista_tributaveis.append(seguro_um)
-	lista_tributaveis.append(seguro_dois)
-
-	manipulador = ManipuladorDeTributaveis()
-	total = manipulador.calcular_impostos(lista_tributaveis)
-
-	print(total)
+	gerente = Gerente("João", "111111111-11", 3000.0, "1234", 0)
+	print(isinstance(gerente, Autenticacao))
+	print(issubclass(Gerente, Autenticacao))
 
 
