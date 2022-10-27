@@ -32,10 +32,19 @@ class HoraExtraMixIn:
 	def calcular_hora_extra(self, horas):
 		pass
 
-class TributavelMixIn:
+class Tributavel(abc.ABC):
 
+	@abc.abstractmethod
 	def get_valor_imposto(self):
 		pass
+
+class ManipuladorDeTributaveis:
+
+	def calcular_impostos(self, lista_tributaveis):
+		total = 0
+		for tributavel in lista_tributaveis:
+			total += tributavel.get_valor_imposto()
+		return total
 
 class Cliente():
 
@@ -87,7 +96,7 @@ class Conta(abc.ABC):
 			self.historico.transacoes.append("Transferência de {} para a conta {}".format(valor, destino.numero))
 			return True
 
-class ContaCorrente(Conta, TributavelMixIn):
+class ContaCorrente(Conta, Tributavel):
 
 	def definir_tipo_taxa(self, taxa):
 		self._saldo += self._saldo * taxa * 2
@@ -98,17 +107,27 @@ class ContaCorrente(Conta, TributavelMixIn):
 	def get_valor_imposto(self):
 		return self._saldo * 0.01
 
+class SeguroDeVida(Tributavel):
+
+	def __init__(self, valor, titular, numero_apolice):
+		self._valor = valor
+		self._titular = titular
+		self._numero_apolice = numero_apolice
+
+	def get_valor_imposto(self):
+		return 50 + self._valor * 0.05
+
 class ContaPoupanca(Conta):
 
 	def definir_tipo_taxa(self, taxa):
-		self._saldo += self._saldo * taxa * 3
+		self._saldo += self._valor * taxa * 3
 
 class ContaInvestimento(Conta):
 
 	def definir_tipo_taxa(self, taxa):
 		self._saldo += self._saldo * taxa * 5
 
-class SeguroDeVida(TributavelMixIn):
+class SeguroDeVida(Tributavel):
 
 	def __init__(self, valor, titular, numero_apolice):
 		self._valor = valor
@@ -286,12 +305,27 @@ class ControleDeBonificacoes:
 
 	# print(total)
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 
-	Autenticacao.register(Gerente)
+	# Autenticacao.register(Gerente)
 
-	gerente = Gerente("João", "111111111-11", 3000.0, "1234", 0)
-	print(isinstance(gerente, Autenticacao))
-	print(issubclass(Gerente, Autenticacao))
+	# gerente = Gerente("João", "111111111-11", 3000.0, "1234", 0)
+	# print(isinstance(gerente, Autenticacao))
+	# print(issubclass(Gerente, Autenticacao))
 
+# if __name__ == '__main__':
+
+	# conta_corrente = ContaCorrente("123-4", "João", 1000.0)
+	# seguro_de_vida = SeguroDeVida(1000.0, "José", "345-77")
+
+	# print(conta_corrente.get_valor_imposto())
+	# print(seguro_de_vida.get_valor_imposto())
+
+	# lista_tributaveis = []
+	# lista_tributaveis.append(conta_corrente)
+	# lista_tributaveis.append(seguro_de_vida)
+
+	# calculadora_de_tributaveis = ManipuladorDeTributaveis()
+	# total = calculadora_de_tributaveis.calcular_impostos(lista_tributaveis)
+	# print(total)
 
