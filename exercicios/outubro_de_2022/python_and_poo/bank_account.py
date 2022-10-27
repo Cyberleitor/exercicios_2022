@@ -73,8 +73,11 @@ class Conta(abc.ABC):
 		return Conta._total_contas
 
 	def depositar(self, valor):
-		self._saldo += valor
-		self.historico.transacoes.append("Depósito de {}".format(valor))
+		if valor < 0:
+			raise ValueError("Você tentou depositar um valor negativo.")
+		else:
+			self._saldo += valor
+			self.historico.transacoes.append("Depósito de {}".format(valor))
 
 	def sacar(self, valor):
 		if self.saldo < valor:
