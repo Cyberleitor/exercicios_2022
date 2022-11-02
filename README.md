@@ -78,6 +78,9 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 
 - [Estudos de Hacking — Leituras de livros](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/outubro_de_2022/hacking_studies);
 - [Python e Orientação a Objetos](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/outubro_de_2022/python_and_poo);
-- [Backup e Criptografia](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/outubro_de_2022/hacking_studies/backup_crypt);
+- [Backup e Criptografia](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/outubro_de_2022/hacking_studies/backup_crypt).
+
+### Novembro de 2022:
+
 - [Estudos de Hacking](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/novembro_de_2022/hacking_studies).
 
