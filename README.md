@@ -83,5 +83,5 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 ### Novembro de 2022:
 
 - [Estudos de Hacking](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/novembro_de_2022/hacking_studies);
-- [Download YouTube](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/novembro_de_2022/download_youtube).
-
+- [Download YouTube](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/novembro_de_2022/download_youtube);
+- [Padronizar nomes de arquivos]().
