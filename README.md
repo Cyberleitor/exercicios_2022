@@ -84,4 +84,4 @@ Olá, como você está? No começo de abril de 2022, iniciei os meus estudos em 
 
 - [Estudos de Hacking](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/novembro_de_2022/hacking_studies);
 - [Download YouTube](https://github.com/Cyberleitor/exercicios/tree/master/exercicios/novembro_de_2022/download_youtube);
-- [Padronizar nomes de arquivos]().
+- [Padronizar nomes de arquivos](https://github.com/Cyberleitor/exercicios/blob/master/exercicios/fevereiro_de_2023/utilidades_dia_a_dia/minusculas.py).
